@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="593.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.client.controllers.PatientController">
+   <children>
+      <Button fx:id="hospitalTerminal" layoutX="34.0" layoutY="24.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="237.0" style="-fx-background-color: #4682B4;" text="Terminal - Pacient" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="34.0" layoutY="89.0" text="Pacient:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="patientName" layoutX="102.0" layoutY="89.0" prefHeight="27.0" prefWidth="207.0" text="Ion">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="showRet" layoutX="-2.0" layoutY="217.0" mnemonicParsing="false" onAction="#showRets" prefHeight="80.0" prefWidth="290.0" style="-fx-background-color: #5D3FD3;" text="Retete medic" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="LogoutBtn" layoutX="-9.0" layoutY="425.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="80.0" prefWidth="300.0" style="-fx-background-color: #5D3FD3;" text="LogOut" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="menuBtn" layoutX="87.0" layoutY="134.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="125.0" style="-fx-background-color: #5D3FD3;" text="MENIU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="showOrders" layoutX="-5.0" layoutY="319.0" mnemonicParsing="false" prefHeight="80.0" prefWidth="290.0" style="-fx-background-color: #5D3FD3;" text="Comenzi" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="stocksTable" layoutX="367.0" layoutY="120.0" prefHeight="392.0" prefWidth="335.0">
+         <columns>
+            <TableColumn prefWidth="138.0" text="ID Reteta" />
+            <TableColumn prefWidth="198.0" text="Doctor" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" />
+         </columns>
+      </TableView>
+      <Button fx:id="myRet" layoutX="367.0" layoutY="74.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="131.0" style="-fx-background-color: #5D3FD3;" text="Retetele mele" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="detailsLabel" layoutX="521.0" layoutY="79.0" prefHeight="17.0" prefWidth="319.0" text="Click pe reteta pentru vizualizarea in detaliu a acesteia!" />
+   </children>
+</AnchorPane>
